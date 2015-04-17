@@ -1,0 +1,8 @@
+<h2> Circus Index! </h2>
+
+<ul>
+    <li><% @circuses.each do |circus| %>
+      <div><%= link_to(circus.name, circus) %> - <%= image_tag circus.image_url %> </div>
+      <% end %>
+    </li>
+</ul>
